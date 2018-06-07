@@ -1,0 +1,8 @@
+import hashlib
+f = input ("enter the text here:")
+#hash f
+f2 =bytes (f,'utf-8')
+m = hashlib.sha384()
+m.update (b"%s"%f2)
+print (m.hexdigest())
+#print hashed value
